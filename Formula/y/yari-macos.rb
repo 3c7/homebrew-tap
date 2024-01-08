@@ -7,12 +7,12 @@ class YariMacos < Formula
   license all_of: ["MIT", "BSD-3-Clause"]
   head "https://github.com/avast/yari", branch: "master"
 
-  depends_on "rust" => :build
-  depends_on "maturin" => :build
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
+  depends_on "maturin" => :build
   depends_on "pkg-config" => :build
+  depends_on "rust" => :build
   depends_on "jansson"
   depends_on "libmagic"
   depends_on "openssl@3"
